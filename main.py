@@ -11,3 +11,5 @@ for i in range(1, 10):
     mensagem = "Número: {}".format(i)
     mensagem_codificada = mensagem.encode("utf-8")
     publisher.publish(topic_path, mensagem_codificada)
+
+print("mensagens enviadas ao tópico: {}".format(topic_path))
